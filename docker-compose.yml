@@ -13,7 +13,7 @@ services:
 
 
   spring-petclinic:
-    image: ibuchh/petclinic-spinnaker-jenkins
+    image: mike4campbell/amazon-eks-jenkins-terraform
     container_name: spring-petclinic
     mem_limit: 512M
     depends_on:
