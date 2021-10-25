@@ -51,8 +51,8 @@ pipeline {
         stage('Remove local images') {
             steps {
                 echo '=== Delete the local docker images ==='
-                sh("docker rmi -f ibuchh/petclinic-spinnaker-jenkins:latest || :")
-                sh("docker rmi -f ibuchh/petclinic-spinnaker-jenkins:$SHORT_COMMIT || :")
+                sh("docker rmi -f mike4campbell/amazon-eks-jenkins-terraform:latest || :")
+                sh("docker rmi -f mike4campbell/amazon-eks-jenkins-terraform:$SHORT_COMMIT || :")
             }
         }
     }
